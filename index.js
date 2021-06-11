@@ -8,7 +8,7 @@ let server = http.createServer((req, res) => {
     res.setHeader('Content-Type', 'application/json');
     let found = _.concat([5],[10])
     console.log("found : ",found, reqUrl.pathname);
-    res.end("Hello world for... "+reqUrl.pathname +", "+ found );
+    res.end("Hello world for.... "+reqUrl.pathname +", "+ found );
 })
 
 server.listen(8080, '0.0.0.0',  () => {
