@@ -9,7 +9,7 @@ let server = http.createServer((req, res) => {
     res.setHeader('Content-Type', 'text/html');
     let found = _.concat([5],[10])
     console.log("found : ",found, reqUrl.pathname);
-    let indexHtml = fs.readFileSync('./index2.html', 'utf8')
+    let indexHtml = fs.readFileSync('./index1.html', 'utf8')
     res.end(indexHtml);
 })
 
